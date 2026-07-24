@@ -1,75 +1,178 @@
-# 🏫 DETTROIN INT — Pavna School Website
+# 🏫 DETTROIN INT — Pavna School Website Redesign
 
-A modern, fully responsive school website built with **React + Vite**, featuring smooth animations, a filterable gallery, multi-page routing, and a premium dark-blue design system.
-
----
-
-## ✨ Features
-
-- **Hero Section** — Full-viewport animated hero with floating stats card and scroll indicator
-- **About Preview** — Split-layout section with school highlights and achievement badges
-- **Why Choose Us** — 3-column feature card grid
-- **Programs** — Academic levels from Pre-Primary to Senior Secondary
-- **Facilities** — Bento-grid layout showcasing school infrastructure
-- **Statistics** — Animated counters section with dark background
-- **Gallery Preview** — Masonry grid with hover overlays
-- **Testimonials** — Auto-cycling carousel with parent/student quotes
-- **CTA Section** — Admissions call-to-action banner
-- **Inner Pages** — Dedicated `/about`, `/gallery`, `/admissions`, and `/contact` pages
-- **Photo Gallery** — Filterable grid (All / Events / Sports / Academics / Infrastructure) with a full-screen lightbox
-- **Page Loader** — Branded loading screen on first visit
-- **Back to Top** — Smooth scroll-to-top button
-- **Fully Responsive** — Mobile-first design across all breakpoints
+A modern redesign of the **Pavna School** website built with **React + Vite**, featuring reusable components, smooth animations, responsive layouts, and an enhanced user experience. This project was developed as part of the **Dettroin Full Stack Developer Internship Technical Assessment**.
 
 ---
 
-## 🛠️ Tech Stack
+# 👨‍💻 Developer Information
+
+| Field | Details |
+|--------|---------|
+| **Full Name** | Ayush Saini |
+| **Intern ID** | N/A |
+| **Email Address** | ayushsaini9294@gmail.com |
+| **GitHub Username** | ayushsaini9294 |
+| **Selected Website** | https://pavnaschoolaligarh.com/ |
+| **Live Demo** | https://dettroin-int-ayush-website.vercel.app/ |
+| **GitHub Repository** | https://github.com/ayushsaini9294/DETTROIN-INT-Ayush-Website |
+
+---
+
+# ✨ Features
+
+- 🎯 Modern full-screen Hero section with smooth animations
+- 📱 Fully responsive design for Desktop, Tablet, and Mobile
+- 🧭 Sticky responsive navigation bar
+- 🏫 About Preview section with achievements
+- ⭐ Why Choose Us section
+- 📚 Academic Programs section
+- 🏢 Modern Facilities section
+- 📈 Animated Statistics Counter
+- 🖼️ Gallery Preview with hover effects
+- 💬 Testimonials carousel
+- 📢 Admissions Call-to-Action section
+- 📸 Filterable Gallery with Lightbox
+- 📄 Dedicated About, Gallery, Admissions, and Contact pages
+- ⬆️ Back to Top button
+- ⏳ Branded Page Loader
+- ✨ Smooth page transitions using Framer Motion
+- 🎨 Premium Design System using CSS Variables
+
+---
+
+# 🚀 Key Improvements Made
+
+Compared to the original website, the following improvements were implemented:
+
+- Completely redesigned the user interface with a modern and professional look.
+- Improved overall user experience with better layout and navigation.
+- Created a fully responsive design for all screen sizes.
+- Built reusable React components for scalability and maintainability.
+- Added smooth animations using Framer Motion.
+- Improved visual hierarchy and typography.
+- Added animated statistics and testimonial sections.
+- Developed a filterable image gallery with lightbox support.
+- Enhanced accessibility using semantic HTML.
+- Organized the project using a scalable folder structure.
+- Improved loading performance and code organization.
+
+---
+
+# 🛠️ Technologies Used
 
 | Technology | Purpose |
-|---|---|
-| [React 19](https://react.dev/) | UI framework |
-| [Vite 8](https://vite.dev/) | Build tool & dev server |
-| [React Router v7](https://reactrouter.com/) | Client-side routing |
-| [Framer Motion](https://www.framer.com/motion/) | Animations & page transitions |
-| [React Icons](https://react-icons.github.io/react-icons/) | Icon library |
-| CSS Modules | Scoped component styling |
-| CSS Custom Properties | Design tokens & theming |
+|------------|---------|
+| React 19 | Frontend Library |
+| Vite 8 | Build Tool |
+| React Router DOM v7 | Client-side Routing |
+| Framer Motion | Animations |
+| React Icons | Icons |
+| CSS Modules | Component Styling |
+| CSS Variables | Design System |
+| Vercel | Deployment |
 
 ---
 
-## 🚀 Getting Started
+# 📁 Project Structure
 
-### Prerequisites
+```text
+src/
+├── assets/
+│
+├── components/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── AboutPreview/
+│   ├── WhyChooseUs/
+│   ├── Programs/
+│   ├── Facilities/
+│   ├── Statistics/
+│   ├── GalleryPreview/
+│   ├── Testimonials/
+│   ├── CTA/
+│   ├── Footer/
+│   ├── PageLoader/
+│   └── BackToTop/
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Admissions.jsx
+│   ├── Gallery.jsx
+│   └── Contact.jsx
+│
+├── styles/
+│   ├── variables.css
+│   └── global.css
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+# 🎨 Design System
+
+The application follows a centralized design system using CSS Custom Properties.
+
+### Color Palette
+
+- Primary Navy Blue (`#0A2463`)
+- Accent Gold (`#E8B84B`)
+- White
+- Light Gray
+- Neutral Dark
+
+### Typography
+
+- Inter
+- System UI
+
+### Design Principles
+
+- Clean Layout
+- Modern Cards
+- Consistent Spacing
+- Soft Shadows
+- Rounded Corners
+- Smooth Animations
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
 - Node.js 18+
-- npm 9+
+- npm
 
-### Installation
+## Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/ayushsaini9294/DETTROIN-INT-Ayush-Website.git
 
-# Navigate into the project
 cd DETTROIN-INT-Ayush-Website
 
-# Install dependencies
 npm install
 
-# Start the development server
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+The application will start on:
 
-### Build for Production
+```
+http://localhost:5173
+```
+
+---
+
+# 🏗️ Build Production Version
 
 ```bash
 npm run build
 ```
 
-Output is placed in the `dist/` folder.
-
-### Preview Production Build
+Preview production build:
 
 ```bash
 npm run preview
@@ -77,72 +180,112 @@ npm run preview
 
 ---
 
-## 📁 Project Structure
+# 🌐 Live Demo
+
+**Vercel Deployment**
+
+https://dettroin-int-ayush-website.vercel.app/
+
+---
+
+# 📸 Project Highlights
+
+### Home Page
+
+- Modern Hero Banner
+- About Preview
+- Programs
+- Facilities
+- Statistics
+- Testimonials
+- Gallery Preview
+- CTA Section
+
+### About Page
+
+- School Overview
+- Vision & Mission
+- Achievements
+
+### Gallery
+
+- Category Filters
+- Full Screen Lightbox
+
+### Admissions
+
+- Admission Information
+- Admission Process
+
+### Contact
+
+- Contact Form
+- School Information
+
+---
+
+# ⚡ Performance
+
+- Optimized React Component Structure
+- Responsive Images
+- Reusable Components
+- CSS Modules
+- Fast Vite Build
+- Smooth Animations
+- Semantic HTML
+- Mobile First Design
+
+---
+
+# 📦 Deployment
+
+The project is deployed using **Vercel**.
+
+Deployment Process:
+
+1. Push project to GitHub
+2. Import repository into Vercel
+3. Vite detected automatically
+4. Build Command
+
+```bash
+npm run build
+```
+
+5. Output Directory
 
 ```
-src/
-├── components/
-│   ├── Hero/               # Full-viewport hero section
-│   ├── Navbar/             # Responsive navigation bar
-│   ├── Footer/             # Site footer with links
-│   ├── AboutPreview/       # About section for homepage
-│   ├── WhyChooseUs/        # Features grid
-│   ├── Programs/           # Academic programs section
-│   ├── Facilities/         # School facilities bento grid
-│   ├── Statistics/         # Animated stats counters
-│   ├── GalleryPreview/     # Gallery teaser for homepage
-│   ├── Testimonials/       # Parent/student testimonials
-│   ├── CTA/                # Call-to-action section
-│   ├── PageLoader/         # Branded loading screen
-│   └── BackToTop/          # Scroll-to-top button
-├── pages/
-│   ├── Home.jsx            # Homepage — assembles all sections
-│   ├── About.jsx           # Full About page
-│   ├── Gallery.jsx         # Filterable photo gallery + lightbox
-│   ├── Admissions.jsx      # Admissions info & form
-│   └── Contact.jsx         # Contact details & form
-├── styles/
-│   ├── variables.css       # Design tokens (colors, spacing, typography)
-│   └── global.css          # CSS reset & global base styles
-├── App.jsx                 # Root component with routing
-└── main.jsx                # React entry point
+dist
 ```
 
 ---
 
-## 🎨 Design System
+# 🎯 Assignment Objective
 
-The project uses a centralized design token system via CSS custom properties defined in [`variables.css`](./src/styles/variables.css):
+The purpose of this project was to redesign the existing Pavna School website with:
 
-- **Colors** — Navy blue primary (`#0A2463`), gold accent (`#E8B84B`), semantic surfaces
-- **Typography** — Inter (headings) + system UI (body), fluid type scale
-- **Spacing** — 4px base grid (`--space-1` through `--space-20`)
-- **Shadows** — `sm`, `md`, `lg`, `xl`, `gold` variants
-- **Border radius** — `sm` through `2xl` + `full`
-- **Transitions** — `base`, `slow`, `spring` easing presets
+- Better UI
+- Better UX
+- Modern Design
+- Responsive Layout
+- Improved Performance
+- Reusable React Components
+- Professional Project Structure
 
----
-
-## ☁️ Deployment
-
-This project is configured for **Vercel** with SPA routing support via [`vercel.json`](./vercel.json).
-
-**Deploy in one click:**
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ayushsaini9294/DETTROIN-INT-Ayush-Website)
-
-Or manually:
-1. Import the repo at [vercel.com](https://vercel.com)
-2. Framework preset: **Vite** (auto-detected)
-3. Build command: `npm run build`
-4. Output directory: `dist`
+while maintaining the original purpose and content of the website.
 
 ---
 
-## 📄 License
+# 📄 Project Note
 
-This project was built as an internship assignment for **DETTROIN INT**.
+This project was created as part of the **Dettroin Full Stack Developer Internship Technical Assessment**.
+
+It is intended solely for evaluation purposes and demonstrates frontend development skills, responsive web design, component-based architecture, clean coding practices, and modern UI/UX principles.
 
 ---
 
-*Built with ❤️ by Ayush Saini*
+# 🙏 Thank You
+
+Thank you for reviewing my submission.
+
+I appreciate the opportunity to participate in the **Dettroin Full Stack Developer Internship Program** and look forward to discussing my project during the technical interview.
